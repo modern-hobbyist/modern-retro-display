@@ -2,13 +2,21 @@
 A DIY Take on the Retro-Style Tidbyt Display
 
 # Intro
-First off, I want to say that I think the Tidbyt displays are awesome, and this project is my attempt at making one of my own. However, I do want to mention that this version of the project is far simpler and therefore, can't do nearly as much as the Tidbyt displays. The limitations mainly come from the Raspberry Pi Pico W which only has ~2mb of space available, which gets cut down to about 500kb once you install CircuitPython on it. This pretty much means you only have room for code files, small binary images, and a few choice libraries. This made it tricky to get everything working, and I had to skip out on Python's fancy YouTube API library in favor of some good old fashioned hand-written code. 
+First off, I want to say that I think the Tidbyt displays are awesome, and this project is my attempt at making one of my own. However, I do want to mention that this version of the project is far simpler and therefore, can't do nearly as much as the Tidbyt displays. This limitation (for the most part) is simply because I don't have enough time to build out all the apps, but that's where you come in!
 
 Also, unlike the Tidbyt displays, you can't push new apps to this version and there isn't an existing library of apps for you to choose from. No, this project is DIY through and through, so if you want to, say, install a weather app, you better get coding!
 
 In the end, this project turned out awesome, and I was able to display a little logo for my channel, add some scrolling text, and display my subscriber count, in human-format which ended up looking great!
 
 If you want to get one of these set up yourself, follow the instructions below!
+
+One last quick note before you get started though! I ended up completing this project with two different Microcontrollers, for a couple reasons. First, I used a Raspberry Pi Pico W because they are fairly cheap, Waveshare has a baseboard that makes setup with a Matrix display super easy, AND because, to be honest, Pico's are super cool and I wanted to give them a shot.
+
+However, the Pico only had about 500kb of space to work with once I had flashed CircuitPython onto it, so that got me looking for an alternative solutions, which led me to the MatrixPortal M4. 
+
+Setup is not quite as simple as the Pico + baseboard, but it's definitely not hard. However, the main benefit is that the MatrixPortal comes with a WiFi coprocessor and 2mb of QSPI flash storage, most of which was still available after flashing CircuitPython. 
+
+I've included setup steps for both microcontrollers below!
 
 # Setup
 ## Google Analytics (YouTube) API Key
